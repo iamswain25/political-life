@@ -1,2 +1,0 @@
-webpackJsonp([0x81b8806e4260],{325:function(t,e){t.exports={data:{allMarkdownRemark:{edges:[{node:{frontmatter:{title:"자서",path:"/kr/0000"}}},{node:{frontmatter:{title:"自序",path:"/cn/0000"}}}]}},pathContext:{}}}});
-//# sourceMappingURL=path---index-8fe0b8a7f7f8901044e5.js.map
