@@ -20,7 +20,7 @@ const IndexPage = ({ data }) => (
   </div>
 )
 export const pageQuery = graphql`
-  query IndexQuery {
+  query krIndexQuery {
     allMarkdownRemark(
       sort : { fields : [fileAbsolutePath], order: ASC }
       filter : {fileAbsolutePath : {regex : "/\/kr\//g"} }) {

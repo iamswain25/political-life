@@ -15,10 +15,10 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
          allMarkdownRemark {
              edges {
                 node {
+                    fileAbsolutePath
                     html
                     id
                     frontmatter {
-                        path
                         title
                     }
                 }
@@ -30,9 +30,14 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
             }
 
             res.data.allMarkdownRemark.edges.forEach(({node}) => { 
+                let defaultPath = node.fileAbsolutePath.split("/").slice(-2).join("/");
+                defaultPath = "/" + defaultPath.substring(0, defaultPath.lastIndexOf("."));
+                const {id} = node;
                 createPage({
-                    path: node.frontmatter.path,
-                    component: postTemplate
+                    // path: node.frontmatter.path,
+                    path: defaultPath,
+                    component: postTemplate,
+                    context: {id},
                 })
             })
         })
