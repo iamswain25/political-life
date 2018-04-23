@@ -4,7 +4,8 @@ import Link from 'gatsby-link'
 
 export default function Template({ data }) {
     const { markdownRemark: post } = data;
-    const urlIndex = parseInt(window.location.href.split("/").pop());//last part of URL
+    const curruentURL = typeof window !== 'undefined' && window.location.href;
+    const urlIndex = parseInt(curruentURL.toString().split("/").pop());//last part of URL
     const nextUrl = (urlIndex + 1).toString().padStart(4, "0");
     const prevUrl = (urlIndex - 1).toString().padStart(4, "0");
     return (

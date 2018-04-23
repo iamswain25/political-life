@@ -3,6 +3,7 @@ import Link from 'gatsby-link'
 
 
 const Header = ({ siteTitle, currentURL }) => {
+  currentURL = currentURL.toString();
   let urlIndex = currentURL.split("/").pop();
 
   return (
