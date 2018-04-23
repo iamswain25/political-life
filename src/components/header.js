@@ -3,8 +3,11 @@ import Link from 'gatsby-link'
 
 
 const Header = ({ siteTitle, currentURL }) => {
-  currentURL = currentURL.toString();
-  let urlIndex = currentURL.split("/").pop();
+  currentURL = currentURL.toString().split("/");
+  let urlIndex = currentURL.pop();
+  if (urlIndex.length < 1) {
+    urlIndex = currentURL.pop();
+  }
 
   return (
   <div
