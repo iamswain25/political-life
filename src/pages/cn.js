@@ -23,7 +23,7 @@ export const pageQuery = graphql`
   query cnIndexQuery {
     allMarkdownRemark(
       sort : { fields : [fileAbsolutePath], order: ASC }
-      filter : {fileAbsolutePath : {regex : "/\/cn\//g"} }) {
+      filter : {fileAbsolutePath : {regex : "/\/cn\//"} }) {
       edges {
         node {
           fileAbsolutePath

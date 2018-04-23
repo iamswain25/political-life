@@ -32,12 +32,12 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
             res.data.allMarkdownRemark.edges.forEach(({node}) => { 
                 let defaultPath = node.fileAbsolutePath.split("/").slice(-2).join("/");
                 defaultPath = "/" + defaultPath.substring(0, defaultPath.lastIndexOf("."));
-                const {id} = node;
+                const {id, fileAbsolutePath} = node;
                 createPage({
                     // path: node.frontmatter.path,
                     path: defaultPath,
                     component: postTemplate,
-                    context: {id},
+                    context: {id, fileAbsolutePath},
                 })
             })
         })
