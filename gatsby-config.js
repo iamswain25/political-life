@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: 'political-life',
   siteMetadata: {
     title: '王沪宁《政治的人生》',
   },
