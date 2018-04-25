@@ -18,7 +18,7 @@ const Layout = ({ children, data }) => {
           { property: 'og:title', content: data.site.siteMetadata.title },
           { property: 'og:type', content: 'website' },
           { property: 'og:description', content: data.site.siteMetadata.description },
-          { property: 'og:image', content: cover },
+          { property: 'og:image', content: 'https://iamswain25.github.io' + cover },
           { property: 'og:url', content: 'https://iamswain25.github.io/political-life/' },
         ]}
       />
