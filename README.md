@@ -1,4 +1,4 @@
-# Wanghuning - Political Life
+# Wang huning - Political Life
 
 Translation of Wanghuning's '94 journals.
 (https://iamswain25.github.io/political-life/)
@@ -9,7 +9,7 @@ http://att.newsmth.net/nForum/att/Book/62318/296
 
 ## Framework
 
-Gatsby
+Gatsby.js
 
 ## Korean newspapper reference to Wang
 

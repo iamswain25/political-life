@@ -19,7 +19,7 @@ const Layout = ({ children, data }) => {
           { property: 'og:type', content: 'website' },
           { property: 'og:description', content: data.site.siteMetadata.description },
           { property: 'og:image', content: 'https://iamswain25.github.io' + cover },
-          { property: 'og:url', content: 'https://iamswain25.github.io/political-life/' },
+          { property: 'og:url', content: 'https://iamswain25.github.io/political-life' },
         ]}
       />
       <Header siteTitle={data.site.siteMetadata.title} currentPathname={currentPathname} />
