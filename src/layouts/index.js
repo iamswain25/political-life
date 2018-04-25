@@ -4,6 +4,7 @@ import Helmet from 'react-helmet'
 
 import Header from '../components/header'
 import './index.css'
+import cover from '../templates/cover.jpg'
 
 const Layout = ({ children, data }) => {
   const currentPathname = typeof window !== 'undefined' && window.location.pathname;
@@ -17,7 +18,7 @@ const Layout = ({ children, data }) => {
           { property: 'og:title', content: data.site.siteMetadata.title },
           { property: 'og:type', content: 'website' },
           { property: 'og:description', content: data.site.siteMetadata.description },
-          { property: 'og:image', content: 'https://img2.secretchina.com/pic/2017/11-18/p2035071a907147589-ss.jpg' },
+          { property: 'og:image', content: cover },
           { property: 'og:url', content: 'https://iamswain25.github.io/political-life/' },
         ]}
       />

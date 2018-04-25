@@ -1,7 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-
 const Header = ({ siteTitle, currentPathname }) => {
   if (currentPathname[currentPathname.length - 1] == "/") {
     currentPathname = currentPathname.substr(0, currentPathname.length - 1);
