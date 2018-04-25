@@ -3,7 +3,7 @@ import Link from 'gatsby-link'
 
 const IndexPage = ({ data }) => (
   <div>
-    <h1>1994年</h1>
+    <h2>1994年</h2>
     <ul>
       {data.allMarkdownRemark.edges.map(({node}) => {
         let convertedPath = node.fileAbsolutePath.split("/").slice(-2).join("/");
@@ -20,7 +20,7 @@ const IndexPage = ({ data }) => (
   </div>
 )
 export const pageQuery = graphql`
-  query krIndexQuery {
+  query IndexQuery {
     allMarkdownRemark(
       sort : { fields : [fileAbsolutePath], order: ASC }
       filter : {fileAbsolutePath : {regex : "/\/kr\//"} }) {

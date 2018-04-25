@@ -31,8 +31,9 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
 
             res.data.allMarkdownRemark.edges.forEach(({node}) => { 
                 const {id, fileAbsolutePath} = node;
-                let defaultPath = fileAbsolutePath.split("/").slice(-2).join("/");
-                defaultPath = "/" + defaultPath.substring(0, defaultPath.lastIndexOf("."));
+                
+                let defaultPath = fileAbsolutePath.replace(`${__dirname}/src/pages`,"");
+                defaultPath = defaultPath.substring(0, defaultPath.lastIndexOf("."));
                 createPage({
                     // path: node.frontmatter.path,
                     path: defaultPath,

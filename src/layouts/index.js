@@ -6,17 +6,20 @@ import Header from '../components/header'
 import './index.css'
 
 const Layout = ({ children, data }) => {
-  const curruentURL = typeof window !== 'undefined' && window.location.href;
+  const currentPathname = typeof window !== 'undefined' && window.location.pathname;
   return (
     <div>
       <Helmet
         title={data.site.siteMetadata.title}
         meta={[
-          { name: 'description', content: 'Sample' },
+          { name: 'description', content: data.site.siteMetadata.description },
           { name: 'keywords', content: 'sample, something' },
+          { property: 'og:title', content: data.site.siteMetadata.title },
+          { property: 'og:description', content: data.site.siteMetadata.description },
+          { property: 'og:image', content: 'https://img2.secretchina.com/pic/2017/11-18/p2035071a907147589-ss.jpg' },
         ]}
       />
-      <Header siteTitle={data.site.siteMetadata.title} currentURL={curruentURL} />
+      <Header siteTitle={data.site.siteMetadata.title} currentPathname={currentPathname} />
       <div
         style={{
           margin: '0 auto',
