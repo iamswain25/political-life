@@ -1,13 +1,15 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import { withPrefix } from 'gatsby-link'
 
 const Header = ({ siteTitle, currentPathname }) => {
   if (currentPathname[currentPathname.length - 1] == "/") {
     currentPathname = currentPathname.substr(0, currentPathname.length - 1);
   }
+  const prefix = withPrefix();
   currentPathname = currentPathname.toString();
-  const krUrl = currentPathname.replace(/\/kr|\/cn/, "kr");
-  const cnUrl = currentPathname.replace(/\/kr|\/cn/, "cn");
+  const krUrl = currentPathname.replace(/\/kr|\/cn/, "kr").replace(prefix, "");
+  const cnUrl = currentPathname.replace(/\/kr|\/cn/, "cn").replace(prefix, "");
   const upUrl = currentPathname.substr(0, currentPathname.lastIndexOf("/"));
 
   return (

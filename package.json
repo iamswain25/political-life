@@ -3,11 +3,12 @@
   "description": "1994 diary of a Communist ideologue",
   "version": "1.0.0",
   "author": "Swain",
+  "repository": "https://github.com/iamswain25/political-life.git",
   "dependencies": {
     "gatsby": "^1.9.253",
     "gatsby-link": "^1.6.41",
     "gatsby-plugin-react-helmet": "^2.0.11",
-    "gatsby-source-filesystem": "^1.5.33",
+    "gatsby-source-filesystem": "^1.5.34",
     "gatsby-transformer-remark": "^1.7.40",
     "react-helmet": "^5.2.0"
   },
