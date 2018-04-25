@@ -1,0 +1,2 @@
+webpackJsonp([0x6c2bde827fbc],{346:function(a,e){a.exports={data:{markdownRemark:{html:"",id:"/home/swain/workspace/political-life/src/pages/cn/0006.md absPath of file >>> MarkdownRemark",fileAbsolutePath:"/home/swain/workspace/political-life/src/pages/cn/0006.md",frontmatter:{title:"1月4日 星期二"}}},pathContext:{id:"/home/swain/workspace/political-life/src/pages/cn/0006.md absPath of file >>> MarkdownRemark"}}}});
+//# sourceMappingURL=path---cn-0006-4449339b2bb6ff9e5c69.js.map
