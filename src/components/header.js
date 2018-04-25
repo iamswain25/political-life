@@ -6,6 +6,7 @@ const Header = ({ siteTitle, currentPathname }) => {
   if (currentPathname[currentPathname.length - 1] == "/") {
     currentPathname = currentPathname.substr(0, currentPathname.length - 1);
   }
+  currentPathname = currentPathname.toString();
   const krUrl = currentPathname.replace(/\/kr|\/cn/, "kr");
   const cnUrl = currentPathname.replace(/\/kr|\/cn/, "cn");
   const upUrl = currentPathname.substr(0, currentPathname.lastIndexOf("/"));
