@@ -15,8 +15,10 @@ const Layout = ({ children, data }) => {
           { name: 'description', content: data.site.siteMetadata.description },
           { name: 'keywords', content: 'sample, something' },
           { property: 'og:title', content: data.site.siteMetadata.title },
+          { property: 'og:type', content: 'website' },
           { property: 'og:description', content: data.site.siteMetadata.description },
           { property: 'og:image', content: 'https://img2.secretchina.com/pic/2017/11-18/p2035071a907147589-ss.jpg' },
+          { property: 'og:url', content: 'https://iamswain25.github.io/political-life/' },
         ]}
       />
       <Header siteTitle={data.site.siteMetadata.title} currentPathname={currentPathname} />
