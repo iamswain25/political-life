@@ -11,6 +11,10 @@ http://att.newsmth.net/nForum/att/Book/62318/296
 
 Gatsby.js
 
+### github page deploy
+
+sudo npm run deploy
+
 ## Korean newspapper reference to Wang
 
 * http://news.joins.com/article/22367559
