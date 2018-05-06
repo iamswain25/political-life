@@ -21,8 +21,8 @@
       "path---cn-0000-e1e678562a68478bfa86.js.map"
     ],
     "path---kr-0003": [
-      "path---kr-0003-7a70dbf64ae9885d4ad0.js",
-      "path---kr-0003-7a70dbf64ae9885d4ad0.js.map"
+      "path---kr-0003-5bde49420515fd9bb09e.js",
+      "path---kr-0003-5bde49420515fd9bb09e.js.map"
     ],
     "path---kr-0000": [
       "path---kr-0000-2b7475da871d8b1d574e.js",
@@ -41,8 +41,8 @@
       "path---index-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---kr": [
-      "path---kr-264d481bcde2f1feeb5d.js",
-      "path---kr-264d481bcde2f1feeb5d.js.map"
+      "path---kr-abc584879258e3687e06.js",
+      "path---kr-abc584879258e3687e06.js.map"
     ],
     "component---src-pages-404-js": [
       "component---src-pages-404-js-a1b9d5017429c9694ba6.js",
@@ -55,6 +55,10 @@
     "path---404-html": [
       "path---404-html-a0e39f21c11f6a62c5ab.js",
       "path---404-html-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---kr-0004": [
+      "path---kr-0004-53c31aec295d1fe71560.js",
+      "path---kr-0004-53c31aec295d1fe71560.js.map"
     ],
     "component---src-templates-post-js": [
       "component---src-templates-post-js-5411b3befed98983648e.js",
@@ -73,14 +77,14 @@
       "path---cn-0003-66c921e451036e2bfaed.js.map"
     ],
     "app": [
-      "app-87cf230eac9fdfbcf3b7.js",
+      "app-9c0a8d02f82afdfdaa0c.js",
       "build-js-styles.css",
-      "app-87cf230eac9fdfbcf3b7.js.map",
+      "app-9c0a8d02f82afdfdaa0c.js.map",
       "build-js-styles.css.map"
     ],
     "path---cn-0004": [
-      "path---cn-0004-e55bfff927c522e928df.js",
-      "path---cn-0004-e55bfff927c522e928df.js.map"
+      "path---cn-0004-6b4d191ff0d6260ee585.js",
+      "path---cn-0004-6b4d191ff0d6260ee585.js.map"
     ],
     "path---cn-0001": [
       "path---cn-0001-43f665bd02fc08d88cee.js",
