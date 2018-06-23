@@ -5,11 +5,11 @@
   "author": "Swain",
   "repository": "https://github.com/iamswain25/political-life.git",
   "dependencies": {
-    "gatsby": "^1.9.253",
-    "gatsby-link": "^1.6.41",
+    "gatsby": "^1.9.270",
+    "gatsby-link": "^1.6.44",
     "gatsby-plugin-react-helmet": "^2.0.11",
-    "gatsby-source-filesystem": "^1.5.34",
-    "gatsby-transformer-remark": "^1.7.40",
+    "gatsby-source-filesystem": "^1.5.38",
+    "gatsby-transformer-remark": "^1.7.42",
     "react-helmet": "^5.2.0"
   },
   "keywords": [
@@ -24,7 +24,7 @@
     "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "devDependencies": {
-    "gh-pages": "^1.1.0",
-    "prettier": "^1.12.1"
+    "gh-pages": "^1.2.0",
+    "prettier": "^1.13.5"
   }
 }
