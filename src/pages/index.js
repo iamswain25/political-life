@@ -10,7 +10,7 @@ const IndexPage = () => (
 Wang is believed to have been one of the principal theorists behind the official political ideologies of three administrations: "Three Represents" by Jiang Zemin, the Scientific Development Concept by Hu Jintao, and the Chinese Dream of Xi Jinping.</p>
 
     <ul>
-      <li><Link to="/kr" >목록</Link></li>
+      <li><Link to="/ko" >목록</Link></li>
       <li><Link to="/cn" >目录</Link></li>
     </ul>
   </div>

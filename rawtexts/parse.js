@@ -34,12 +34,12 @@ fs.readdir(`${__dirname}/../src/pages/cn`, (err, files) => {
             newfilename = maxNo.toString().padStart(4, '0') + ".md";
             let newline = line.trim().replace(reg, "title: '$1 $2'");
 
-            fs.appendFileSync(`${__dirname}/../src/pages/test/${newfilename}`, `---\r\n`);
-            fs.appendFileSync(`${__dirname}/../src/pages/test/${newfilename}`, `${newline}\r\n`);
-            fs.appendFileSync(`${__dirname}/../src/pages/test/${newfilename}`, `---\r\n`);
+            fs.appendFileSync(`${__dirname}/../src/pages/test/${newfilename}`, `---\n`);
+            fs.appendFileSync(`${__dirname}/../src/pages/test/${newfilename}`, `${newline}\n`);
+            fs.appendFileSync(`${__dirname}/../src/pages/test/${newfilename}`, `---\n`);
         }
         else {
-            fs.appendFileSync(`${__dirname}/../src/pages/test/${newfilename}`, `${line.trim()}\r\n`);
+            fs.appendFileSync(`${__dirname}/../src/pages/test/${newfilename}`, `${line.trim()}\n`);
         }
     });
 });

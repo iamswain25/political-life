@@ -5,7 +5,8 @@
   "author": "Swain",
   "repository": "https://github.com/iamswain25/political-life.git",
   "dependencies": {
-    "gatsby": "^1.9.270",
+    "@google-cloud/translate": "^1.1.0",
+    "gatsby": "^1.9.273",
     "gatsby-link": "^1.6.44",
     "gatsby-plugin-react-helmet": "^2.0.11",
     "gatsby-source-filesystem": "^1.5.38",

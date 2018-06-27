@@ -7,8 +7,8 @@ const Header = ({ siteTitle, currentPathname }) => {
   }
   currentPathname = currentPathname.toString();//avoid webpack error
   currentPathname = currentPathname.replace(/\/political-life/,"");
-  const krUrl = currentPathname.replace(/\/cn|\/kr/, "/kr");
-  const cnUrl = currentPathname.replace(/\/cn|\/kr/, "/cn");
+  const krUrl = currentPathname.replace(/\/cn|\/ko/, "/ko");
+  const cnUrl = currentPathname.replace(/\/cn|\/ko/, "/cn");
   const upUrl = currentPathname.substr(0, currentPathname.lastIndexOf("/"));
 
   return (
