@@ -4,6 +4,7 @@ import Helmet from 'react-helmet'
 
 import Header from '../components/header'
 import './index.css'
+// import './calendar.css'
 import cover from '../templates/cover.jpg'
 
 const Layout = ({ children, data }) => {

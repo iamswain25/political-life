@@ -411,7 +411,7 @@ pre {
   word-wrap: normal;
   padding: 1.45rem;
 }
-table {
+/* table {
   margin-left: 0;
   margin-right: 0;
   margin-top: 0;
@@ -424,7 +424,7 @@ table {
   line-height: 1.45rem;
   border-collapse: collapse;
   width: 100%;
-}
+} */
 fieldset {
   margin-left: 0;
   margin-right: 0;
@@ -569,7 +569,7 @@ abbr[title] {
 thead {
   text-align: left;
 }
-td,
+/* td,
 th {
   text-align: left;
   border-bottom: 1px solid hsla(0, 0%, 0%, 0.12);
@@ -589,7 +589,7 @@ td:first-child {
 th:last-child,
 td:last-child {
   padding-right: 0;
-}
+} */
 tt,
 code {
   background-color: hsla(0, 0%, 0%, 0.04);

@@ -1,35 +1,28 @@
 import React from 'react'
+import Calendar from '../components/calendar'
 import Link from 'gatsby-link'
 
 const IndexPage = ({ data }) => (
   <div>
     <h2>1994年</h2>
-    <ul>
-      {data.allMarkdownRemark.edges.map(({node}) => {
-        let convertedPath = node.fileAbsolutePath.split("/").slice(-2).join("/");
-        convertedPath = "/" + convertedPath.substring(0, convertedPath.lastIndexOf("."));
-        return (
-          <li key={node.id}>
-            <Link
-              to={convertedPath}
-            >{node.frontmatter.title}</Link>
-          </li>
-        )
-      })}
-    </ul>
+    <Calendar dates={data.allMarkdownRemark.edges}/>
+    {/* <Calendar dates={data.allMarkdownRemark.edges.map(({node})=> node.frontmatter.title) }/> */}
+    {/* <div>{data.allMarkdownRemark.edges.toString()}</div> */}
   </div>
 )
+
 export const pageQuery = graphql`
-  query IndexQuery {
+  query koIndexQuery {
     allMarkdownRemark(
-      sort : { fields : [fileAbsolutePath], order: ASC }
-      filter : {fileAbsolutePath : {regex : "/\/kr\//"} }) {
+      sort : {fields : [fileAbsolutePath], order: ASC }
+      filter : {fileAbsolutePath : {regex : "/\/ko\//"} }) {
       edges {
         node {
           fileAbsolutePath
           id
           frontmatter {
             title
+            date
           }
         }
       }

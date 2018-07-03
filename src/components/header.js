@@ -6,11 +6,15 @@ const Header = ({ siteTitle, currentPathname }) => {
     currentPathname = currentPathname.substr(0, currentPathname.length - 1);
   }
   currentPathname = currentPathname.toString();//avoid webpack error
-  currentPathname = currentPathname.replace(/\/political-life/,"");
-  const krUrl = currentPathname.replace(/\/cn|\/ko/, "/ko");
-  const cnUrl = currentPathname.replace(/\/cn|\/ko/, "/cn");
+  currentPathname = currentPathname.replace(/\/political-life/, "");
+  let krUrl = currentPathname.replace(/\/cn|\/ko/, "/ko");
+  let cnUrl = currentPathname.replace(/\/cn|\/ko/, "/cn");
   const upUrl = currentPathname.substr(0, currentPathname.lastIndexOf("/"));
 
+  if (currentPathname == "") {
+    krUrl = "/ko";
+    cnUrl = "/cn";
+  }
   return (
     <div
       style={{
