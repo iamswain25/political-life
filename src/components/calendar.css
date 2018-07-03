@@ -4,3 +4,10 @@ table {
     margin: 10px;
     float: left;
 }
+
+table > tbody > tr > th {
+    border-bottom: solid 1px grey;
+}
+table > tbody > tr > td {
+    width: 1.5em;
+}
