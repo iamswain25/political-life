@@ -31,7 +31,7 @@ class Calendar extends React.Component {
           pointer++
         }
         else {
-          dateHtml.push(<td key={Math.random()}>&nbsp;</td>);
+          dateHtml.push(<td key={Math.random()} className="grey">{datenow.getDate()}</td>);
           // dateHtml.push(<td>{dates[pointer].node.frontmatter.date}</td>);
         }
         datenow.setDate(datenow.getDate() + 1);
@@ -57,7 +57,7 @@ class Calendar extends React.Component {
               pointer++;
           }
           else {
-            dateHtml.push(<td key={Math.random() }>&nbsp;</td>);
+            dateHtml.push(<td key={Math.random()} className="grey">{datenow.getDate()}</td>);
           }
           datenow.setDate(datenow.getDate() + 1);
         }

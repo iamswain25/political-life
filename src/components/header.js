@@ -2,18 +2,22 @@ import React from 'react'
 import Link from 'gatsby-link'
 
 const Header = ({ siteTitle, currentPathname }) => {
-  if (currentPathname[currentPathname.length - 1] == "/") {
-    currentPathname = currentPathname.substr(0, currentPathname.length - 1);
-  }
-  currentPathname = currentPathname.toString();//avoid webpack error
-  currentPathname = currentPathname.replace(/\/political-life/, "");
-  let krUrl = currentPathname.replace(/\/cn|\/ko/, "/ko");
-  let cnUrl = currentPathname.replace(/\/cn|\/ko/, "/cn");
+  let koUrl, zhUrl, jaUrl;
+  const pathArray = currentPathname.split("/");
   const upUrl = currentPathname.substr(0, currentPathname.lastIndexOf("/"));
-
-  if (currentPathname == "") {
-    krUrl = "/ko";
-    cnUrl = "/cn";
+  switch (pathArray.length) {
+    case 0:
+    case 1:
+    case 2:
+      koUrl = "/ko";
+      zhUrl = "/zh";
+      jaUrl = "/ja";
+      break;
+    case 3:
+      koUrl = "/ko/".concat(pathArray[2]);
+      zhUrl = "/zh/".concat(pathArray[2]);
+      jaUrl = "/ja/".concat(pathArray[2]);
+      break;
   }
   return (
     <div
@@ -40,7 +44,7 @@ const Header = ({ siteTitle, currentPathname }) => {
         </h1>
         <Link
           activeStyle={{ display: "none" }}
-          to={krUrl}
+          to={koUrl}
           style={{
             color: 'white',
             textDecoration: 'none',
@@ -49,7 +53,7 @@ const Header = ({ siteTitle, currentPathname }) => {
           한글
         </Link>
         <Link
-          to={cnUrl}
+          to={zhUrl}
           activeStyle={{ display: "none" }}
           style={{
             color: 'white',
@@ -57,6 +61,16 @@ const Header = ({ siteTitle, currentPathname }) => {
             margin: 5
           }}>
           中文
+        </Link>
+        <Link
+          to={jaUrl}
+          activeStyle={{ display: "none" }}
+          style={{
+            color: 'white',
+            textDecoration: 'none',
+            margin: 5
+          }}>
+          日文
         </Link>
       </div>
     </div>

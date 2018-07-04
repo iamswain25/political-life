@@ -11,3 +11,7 @@ table > tbody > tr > th {
 table > tbody > tr > td {
     width: 1.5em;
 }
+
+.grey {
+    color: darkslategray;
+}
