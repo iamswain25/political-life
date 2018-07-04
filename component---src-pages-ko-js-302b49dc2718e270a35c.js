@@ -1,0 +1,2 @@
+webpackJsonp([0xeba0004936cc],{217:function(e,a,t){"use strict";function l(e){return e&&e.__esModule?e:{default:e}}a.__esModule=!0,a.pageQuery=void 0;var u=t(3),r=l(u),n=t(57),d=l(n),c=function(e){var a=e.data;return r.default.createElement("div",null,r.default.createElement("h2",null,"1994년"),r.default.createElement(d.default,{dates:a.allMarkdownRemark.edges}))};a.pageQuery="** extracted graphql fragment **";a.default=c}});
+//# sourceMappingURL=component---src-pages-ko-js-302b49dc2718e270a35c.js.map
