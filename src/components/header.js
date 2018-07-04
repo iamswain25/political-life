@@ -3,10 +3,17 @@ import Link from 'gatsby-link'
 
 const Header = ({ siteTitle, currentPathname }) => {
   currentPathname = String(currentPathname);
-  let koUrl, zhUrl, jaUrl, enUrl, file = "";
+  let koUrl, zhUrl, jaUrl, enUrl, file = "", upUrl;
   const pathArray = currentPathname.split("/").filter(String);
   const pathLength = pathArray.length - 1;
-  const upUrl = pathArray.slice(0, pathLength).join("/");
+  //production
+  if(pathArray.length > 0 && pathArray[0].length > 2){
+    upUrl = "/".concat(pathArray.slice(1, pathLength).join("/"));
+  }
+  //development
+  else{
+    upUrl = "/".concat(pathArray.slice(0, pathLength).join("/"));
+  }
 
   if(pathArray.length >= 2 && pathArray[pathLength].length > 2) {
     file = "/".concat(pathArray[pathLength]);
