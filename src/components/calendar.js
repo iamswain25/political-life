@@ -18,7 +18,7 @@ class Calendar extends React.Component {
       }
       for (let j = 0; j < 8 - startWith; j++) {
         if (dates[pointer] === undefined) {
-          dateHtml.push(<td key={Math.random()}>&nbsp;</td>);
+          dateHtml.push(<td key={Math.random()} className="grey">{datenow.getDate()}</td>);
         }
         else if (Date.parse(dates[pointer].node.frontmatter.date) == Date.parse(datenow)) {
           let node = dates[pointer].node;
@@ -43,7 +43,7 @@ class Calendar extends React.Component {
           if (datenow.getMonth() == i) {
             // if( datenow.getMonth() == 9) debugger
             if (dates[pointer] === undefined) {
-              dateHtml.push(<td key={Math.random()}>&nbsp;</td>);
+              dateHtml.push(<td key={Math.random()} className="grey">{datenow.getDate()}</td>);
             }
             else if (Date.parse(dates[pointer].node.frontmatter.date + " ") == Date.parse(datenow)) {
               let node = dates[pointer].node;

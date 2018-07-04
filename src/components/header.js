@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 
 const Header = ({ siteTitle, currentPathname }) => {
-  let koUrl, zhUrl, jaUrl;
+  let koUrl, zhUrl, jaUrl, enUrl;
   const pathArray = currentPathname.split("/");
   const upUrl = currentPathname.substr(0, currentPathname.lastIndexOf("/"));
   switch (pathArray.length) {
@@ -11,12 +11,14 @@ const Header = ({ siteTitle, currentPathname }) => {
     case 2:
       koUrl = "/ko";
       zhUrl = "/zh";
+      enUrl = "/en";
       jaUrl = "/ja";
       break;
     case 3:
       koUrl = "/ko/".concat(pathArray[2]);
       zhUrl = "/zh/".concat(pathArray[2]);
       jaUrl = "/ja/".concat(pathArray[2]);
+      enUrl = "/en/".concat(pathArray[2]);
       break;
   }
   return (
@@ -71,6 +73,16 @@ const Header = ({ siteTitle, currentPathname }) => {
             margin: 5
           }}>
           日文
+        </Link>
+        <Link
+          to={enUrl}
+          activeStyle={{ display: "none" }}
+          style={{
+            color: 'white',
+            textDecoration: 'none',
+            margin: 5
+          }}>
+          English
         </Link>
       </div>
     </div>
