@@ -15,3 +15,7 @@ table > tbody > tr > td {
 .grey {
     color: darkslategray;
 }
+
+.red {
+    color: red;
+}

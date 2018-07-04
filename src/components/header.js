@@ -2,26 +2,19 @@ import React from 'react'
 import Link from 'gatsby-link'
 
 const Header = ({ siteTitle, currentPathname }) => {
-  let koUrl, zhUrl, jaUrl, enUrl;
-  currentPathname = currentPathname.toString();
-  const pathArray = currentPathname.split("/");
-  const upUrl = currentPathname.substr(0, currentPathname.lastIndexOf("/"));
-  switch (pathArray.length) {
-    case 0:
-    case 1:
-    case 2:
-      koUrl = "/ko";
-      zhUrl = "/zh";
-      enUrl = "/en";
-      jaUrl = "/ja";
-      break;
-    case 3:
-      koUrl = "/ko/".concat(pathArray[2]);
-      zhUrl = "/zh/".concat(pathArray[2]);
-      jaUrl = "/ja/".concat(pathArray[2]);
-      enUrl = "/en/".concat(pathArray[2]);
-      break;
+  currentPathname = String(currentPathname);
+  let koUrl, zhUrl, jaUrl, enUrl, file = "";
+  const pathArray = currentPathname.split("/").filter(String);
+  const pathLength = pathArray.length - 1;
+  const upUrl = pathArray.slice(0, pathLength).join("/");
+
+  if(pathArray.length >= 2 && pathArray[pathLength].length > 2) {
+    file = "/".concat(pathArray[pathLength]);
   }
+  koUrl = "/ko".concat(file);
+  zhUrl = "/zh".concat(file);
+  jaUrl = "/ja".concat(file);
+  enUrl = "/en".concat(file);
   return (
     <div
       style={{
@@ -46,7 +39,7 @@ const Header = ({ siteTitle, currentPathname }) => {
           </Link>
         </h1>
         <Link
-          activeStyle={{ display: "none" }}
+          activeStyle={{ color: "black" }}
           to={koUrl}
           style={{
             color: 'white',
@@ -57,7 +50,7 @@ const Header = ({ siteTitle, currentPathname }) => {
         </Link>
         <Link
           to={zhUrl}
-          activeStyle={{ display: "none" }}
+          activeStyle={{ color: "black" }}
           style={{
             color: 'white',
             textDecoration: 'none',
@@ -67,7 +60,7 @@ const Header = ({ siteTitle, currentPathname }) => {
         </Link>
         <Link
           to={jaUrl}
-          activeStyle={{ display: "none" }}
+          activeStyle={{ color: "black" }}
           style={{
             color: 'white',
             textDecoration: 'none',
@@ -77,7 +70,7 @@ const Header = ({ siteTitle, currentPathname }) => {
         </Link>
         <Link
           to={enUrl}
-          activeStyle={{ display: "none" }}
+          activeStyle={{ color: "black" }}
           style={{
             color: 'white',
             textDecoration: 'none',

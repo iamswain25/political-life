@@ -70,8 +70,8 @@ class Calendar extends React.Component {
     monthHtml.push(
       <table key={Math.random()}>
         <tbody>
-          <tr><th colSpan="7">{i + 1}月</th></tr>
-          <tr className="cl"><td>M</td><td>T</td><td>W</td><td>T</td><td>F</td><td>S</td><td>S</td></tr>
+          <tr className="red"><th colSpan="7">{i + 1}月</th></tr>
+          <tr className="red"><td>M</td><td>T</td><td>W</td><td>T</td><td>F</td><td>S</td><td>S</td></tr>
           {weekHtml}
         </tbody>
       </table>
