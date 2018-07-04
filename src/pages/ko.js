@@ -5,9 +5,6 @@ const IndexPage = ({ data }) => (
   <div>
     <h2>1994년</h2>
     <Calendar dates={data.allMarkdownRemark.edges}/>
-    {/* {data.allMarkdownRemark.edges.map(({node})=> {
-      return(<div>{node.frontmatter.title}</div>)
-    })} */}
   </div>
 )
 

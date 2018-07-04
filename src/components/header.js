@@ -3,6 +3,7 @@ import Link from 'gatsby-link'
 
 const Header = ({ siteTitle, currentPathname }) => {
   let koUrl, zhUrl, jaUrl, enUrl;
+  currentPathname = currentPathname.toString();
   const pathArray = currentPathname.split("/");
   const upUrl = currentPathname.substr(0, currentPathname.lastIndexOf("/"));
   switch (pathArray.length) {

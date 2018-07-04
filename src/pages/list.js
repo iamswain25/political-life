@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-const IndexPage = ({ data }) => (
+const IndexPage = ({ data }) =>(
   <div>
     <h2>1994年</h2>
     <ul>
@@ -19,11 +19,12 @@ const IndexPage = ({ data }) => (
     </ul>
   </div>
 )
+
 export const pageQuery = graphql`
   query listIndexQuery {
     allMarkdownRemark(
       sort : { fields : [fileAbsolutePath], order: ASC }
-      filter : {fileAbsolutePath : {regex : "/\/cn\//"} }) {
+      filter : {fileAbsolutePath : {regex : "/\/zh\//"} }) {
       edges {
         node {
           fileAbsolutePath

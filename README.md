@@ -19,7 +19,7 @@ Gatsby.js
 
 ### github page deploy command
 
-sudo npm run deploy
+npm run deploy
 
 ## Related Article
 
