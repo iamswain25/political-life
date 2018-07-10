@@ -1,2 +1,2 @@
-webpackJsonp([60335399758886],{110:function(t,e){t.exports={data:{site:{siteMetadata:{title:"王沪宁《政治的人生》",description:"1994 diary of a Communist ideologue"}}},layoutContext:{}}}});
+webpackJsonp([60335399758886],{105:function(t,e){t.exports={data:{site:{siteMetadata:{title:"王沪宁《政治的人生》",description:"1994 diary of a Communist ideologue"}}},layoutContext:{}}}});
 //# sourceMappingURL=path----bb13cdd72fcab4dd0bee.js.map
