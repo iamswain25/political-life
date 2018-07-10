@@ -3,11 +3,8 @@ import Calendar from '../components/calendar'
 
 const IndexPage = ({ data }) => (
   <div>
-    <h2>Year 1994</h2>
+    <h2>Year 1994, Wang huning, Political life, original &amp; translation</h2>
     <Calendar dates={data.allMarkdownRemark.edges}/>
-    {/* {data.allMarkdownRemark.edges.map(({node})=> {
-      return(<div>{node.frontmatter.title}</div>)
-    })} */}
   </div>
 )
 

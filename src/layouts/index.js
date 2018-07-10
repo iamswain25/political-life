@@ -4,8 +4,8 @@ import Helmet from 'react-helmet'
 
 import Header from '../components/header'
 import './index.css'
-// import './calendar.css'
 import cover from '../templates/cover.jpg'
+import favicon from "./favicon.png";
 
 const Layout = ({ children, data }) => {
   const currentPathname = typeof window !== 'undefined' && window.location.pathname;
@@ -22,6 +22,7 @@ const Layout = ({ children, data }) => {
           { property: 'og:image', content: 'https://iamswain25.github.io' + cover },
           { property: 'og:url', content: 'https://iamswain25.github.io/political-life' },
         ]}
+        link={[{rel: 'shortcut icon', href : favicon, type: 'image/x-icon'}]}
       />
       <Header siteTitle={data.site.siteMetadata.title} currentPathname={currentPathname} />
       <div

@@ -23,10 +23,17 @@ npm run deploy
 
 ## Related Article
 
-### Korean newspapper reference to Wang
+### Korean
 
 * http://news.joins.com/article/22367559
 * http://www.hani.co.kr/arti/international/china/816071.html
+* http://www.koreadaily.com/news/read.asp?art_id=2868796
+
+
+### English
+
+* https://thediplomat.com/2017/11/wang-huning-chinas-antidote-to-strongman-politics/
+
 
 ## Development Journal
 
