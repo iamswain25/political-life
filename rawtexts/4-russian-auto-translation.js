@@ -27,14 +27,15 @@ if (!String.prototype.padStart) {
 }
 
 fs.readdir(`${__dirname}/../src/pages/${target}`, (err, files) => {
-    console.log(files);
+    // console.log(files);
     if (err) {
         return console.log(err);
     }
-    let maxNo = Math.max(...files.map((filename) => parseInt(filename.substr(0, 4))));
+    // let maxNo = Math.max(...files.map((filename) => parseInt(filename.substr(0, 4))));
+    let maxNo = -1;
     if (maxNo < 0) { maxNo = -1; }
     console.log(maxNo);
-    while (++maxNo < 200) {
+    while (++maxNo < 1) {
         const newfilename = maxNo.toString().padStart(4, '0') + ".md";
         fs.readFile(`${__dirname}/../src/pages/zh/${newfilename}`, 'utf8', function (err, data) {
             if (err) {
@@ -46,7 +47,11 @@ fs.readdir(`${__dirname}/../src/pages/${target}`, (err, files) => {
                 .then(results => {
                     const translation = results[0];
                     console.log(`filename: ${newfilename}`);
-                    // console.log(`Translation: ${translation}`);
+                    const trans1 = translation.split("\n");
+                    const title = `title: '${trans1[1].split(': ')[1]}'`
+                    const date = 'date: '+trans1[2].split(': ')[1];
+                    trans1.splice(1,2,title, date);
+                    // console.log(`Translation:\n${trans1.join('\n')}`);
                     fs.appendFileSync(`${__dirname}/../src/pages/${target}/${newfilename}`, translation);
                 })
                 .catch(err => {
