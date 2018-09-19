@@ -1,20 +1,21 @@
 import React from 'react'
 import Calendar from '../components/calendar'
-
+import { graphql } from 'gatsby'
+import Layout from '../components/layouts'
 const IndexPage = ({ data }) => (
-  <div>
-  <h2>1994年</h2>
-  <Calendar dates={data.allMarkdownRemark.edges}/>
-  {/* {data.allMarkdownRemark.edges.map(({node})=> {
-    return(<div>{node.frontmatter.title}</div>)
-  })} */}
-</div>
+  <Layout pathname={window.location.pathname}>
+    <div>
+      <h2>1994年</h2>
+      <Calendar dates={data.allMarkdownRemark.edges} />
+    </div>
+  </Layout>
 )
 export const pageQuery = graphql`
   query zhIndexQuery {
     allMarkdownRemark(
-      sort : { fields : [fileAbsolutePath], order: ASC }
-      filter : {fileAbsolutePath : {regex : "/\/zh\//"} }) {
+      sort: { fields: [fileAbsolutePath], order: ASC }
+      filter: { fileAbsolutePath: { regex: "//zh//" } }
+    ) {
       edges {
         node {
           fileAbsolutePath

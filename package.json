@@ -6,12 +6,15 @@
   "repository": "https://github.com/iamswain25/political-life.git",
   "dependencies": {
     "@google-cloud/translate": "^1.1.0",
-    "gatsby": "^1.9.273",
-    "gatsby-link": "^1.6.45",
+    "gatsby": "^2.0.5",
     "gatsby-plugin-react-helmet": "^2.0.11",
     "gatsby-source-filesystem": "^1.5.39",
     "gatsby-transformer-remark": "^1.7.44",
-    "react-helmet": "^5.2.0"
+    "history": "^4.7.2",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-helmet": "^5.2.0",
+    "react-router-dom": "^4.3.1"
   },
   "keywords": [
     "gatsby"
@@ -26,6 +29,6 @@
   },
   "devDependencies": {
     "gh-pages": "^1.2.0",
-    "prettier": "^1.13.7"
+    "prettier": "^1.14.3"
   }
 }

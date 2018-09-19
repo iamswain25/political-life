@@ -7,3 +7,9 @@
 .floatright {
   float: right;
 }
+
+.active {
+  color: black;
+  text-decoration: none;
+  margin: 5px;
+}
