@@ -36,6 +36,9 @@ const Header = ({ siteTitle, currentPathname }) => {
   let enUrl = '/en'.concat(file)
   let ruUrl = '/ru'.concat(file)
   let frUrl = '/fr'.concat(file)
+  let esUrl = '/es'.concat(file)
+  let viUrl = '/vi'.concat(file)
+  let msUrl = '/ms'.concat(file)
 
   return (
     <div
@@ -62,24 +65,6 @@ const Header = ({ siteTitle, currentPathname }) => {
             {siteTitle}
           </Link>
         </h1>
-        <Link to={koUrl} className="linkwhite" getProps={isActive}>
-          한글
-        </Link>
-        <Link to={zhUrl} getProps={isActive} className="linkwhite">
-          中文
-        </Link>
-        <Link to={jaUrl} getProps={isActive} className="linkwhite">
-          日文
-        </Link>
-        <Link className="linkwhite" to={enUrl} getProps={isActive}>
-          English
-        </Link>
-        <Link className="linkwhite" to={ruUrl} getProps={isActive}>
-          русский
-        </Link>
-        <Link className="linkwhite" to={frUrl} getProps={isActive}>
-          Français
-        </Link>
         {state ? (
           <a className="floatright" href={editUrl} rel="noopener">
             {' '}
@@ -97,6 +82,35 @@ const Header = ({ siteTitle, currentPathname }) => {
             </svg>{' '}
           </a>
         ) : null}
+        <div>
+          <Link to={koUrl} className="linkwhite" getProps={isActive}>
+            한글
+          </Link>
+          <Link to={zhUrl} getProps={isActive} className="linkwhite">
+            中文
+          </Link>
+          <Link to={jaUrl} getProps={isActive} className="linkwhite">
+            日文
+          </Link>
+          <Link className="linkwhite" to={enUrl} getProps={isActive}>
+            English
+          </Link>
+          <Link className="linkwhite" to={ruUrl} getProps={isActive}>
+            русский
+          </Link>
+          <Link className="linkwhite" to={frUrl} getProps={isActive}>
+            Français
+          </Link>
+          <Link className="linkwhite" to={esUrl} getProps={isActive}>
+            Español
+          </Link>
+          <Link className="linkwhite" to={viUrl} getProps={isActive}>
+            Tiếng Việt
+          </Link>
+          <Link className="linkwhite" to={msUrl} getProps={isActive}>
+            Melayu
+          </Link>
+        </div>
       </div>
     </div>
   )

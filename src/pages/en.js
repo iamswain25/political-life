@@ -1,12 +1,14 @@
 import React from 'react'
 import Calendar from '../components/calendar'
 import { graphql } from 'gatsby'
-
+import Layout from '../components/layouts'
 const IndexPage = ({ data }) => (
-  <div>
-    <h2>Year 1994, Wang huning, Political life, original &amp; translation</h2>
-    <Calendar dates={data.allMarkdownRemark.edges} />
-  </div>
+  <Layout pathname={window.location.pathname}>
+    <div>
+      <h2>Year 1994, Wang huning, Political life, auto-translation</h2>
+      <Calendar dates={data.allMarkdownRemark.edges} />
+    </div>
+  </Layout>
 )
 
 export const pageQuery = graphql`

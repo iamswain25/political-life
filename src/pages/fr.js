@@ -6,7 +6,7 @@ const IndexPage = ({ data }) => (
   <Layout pathname={window.location.pathname}>
     <div>
       <h2>
-        1994 Wang Huning &lt; &lt; vie politique &gt; &gt; Traduction
+        1994 Wang Huning &lt;&lt; vie politique &gt;&gt; Traduction
         automatique
       </h2>
       <Calendar dates={data.allMarkdownRemark.edges} />
