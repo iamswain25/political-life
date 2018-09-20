@@ -29,10 +29,9 @@ fs.readdir(`${__dirname}/../src/pages/${target}`, (err, files) => {
         return console.log(err);
     }
     let maxNo = Math.max(...files.map((filename) => parseInt(filename.substr(0, 4))));
-    // let maxNo = -1;
     if (maxNo < 0) { maxNo = -1; }
     console.log(maxNo);
-    while (++maxNo < 1) {
+    while (++maxNo < 200) {
         const newfilename = maxNo.toString().padStart(4, '0') + ".md";
         fs.readFile(`${__dirname}/../src/pages/zh/${newfilename}`, 'utf8', function (err, data) {
             if (err) {
