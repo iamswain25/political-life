@@ -1,9 +1,9 @@
 import React from 'react'
-import { Link } from "@reach/router"
+import { Link } from '@reach/router'
 import './header.css'
 
 const isActive = ({ isCurrent }) => {
-  return isCurrent ? { className: "active" } : null
+  return isCurrent ? { className: 'active' } : null
 }
 const Header = ({ siteTitle, currentPathname }) => {
   currentPathname = String(currentPathname)
@@ -35,6 +35,7 @@ const Header = ({ siteTitle, currentPathname }) => {
   let jaUrl = '/ja'.concat(file)
   let enUrl = '/en'.concat(file)
   let ruUrl = '/ru'.concat(file)
+  let frUrl = '/fr'.concat(file)
 
   return (
     <div
@@ -75,6 +76,9 @@ const Header = ({ siteTitle, currentPathname }) => {
         </Link>
         <Link className="linkwhite" to={ruUrl} getProps={isActive}>
           русский
+        </Link>
+        <Link className="linkwhite" to={frUrl} getProps={isActive}>
+          Français
         </Link>
         {state ? (
           <a className="floatright" href={editUrl} rel="noopener">

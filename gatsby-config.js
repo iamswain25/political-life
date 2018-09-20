@@ -11,8 +11,8 @@ module.exports = {
       options: {
         path: `${__dirname}/src/pages`,
         name: 'pages',
-      }
+      },
     },
-    'gatsby-transformer-remark'
+    'gatsby-transformer-remark',
   ],
 }

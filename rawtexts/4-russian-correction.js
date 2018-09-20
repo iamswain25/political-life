@@ -15,7 +15,7 @@ fs.readdir(`${__dirname}/../src/pages/${target}`, (err, files) => {
             const translation = data
             const trans1 = translation.split("\n");
             //translation is not inconsistent with ' so, need more treatment, but I did it manually since only 5 files.
-            const title = `title: '${trans1[1].split(': ')[1]}'`
+            const title = `title: '${trans1[1].split(': ')[1].replace(`'`,``)}'`
             const date = 'date: '+trans1[2].split(': ')[1];
             trans1.splice(1,2,title, date);
             const newData = trans1.join('\n')

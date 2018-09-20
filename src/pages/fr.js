@@ -5,16 +5,19 @@ import Layout from '../components/layouts'
 const IndexPage = ({ data }) => (
   <Layout pathname={window.location.pathname}>
     <div>
-      <h2>Год 1994, Wang huning, Политическая жизнь</h2>
+      <h2>
+        1994 Wang Huning &lt; &lt; vie politique &gt; &gt; Traduction
+        automatique
+      </h2>
       <Calendar dates={data.allMarkdownRemark.edges} />
     </div>
   </Layout>
 )
 export const pageQuery = graphql`
-  query ruIndexQuery {
+  query frIndexQuery {
     allMarkdownRemark(
       sort: { fields: [fileAbsolutePath], order: ASC }
-      filter: { fileAbsolutePath: { regex: "//ru//" } }
+      filter: { fileAbsolutePath: { regex: "//fr//" } }
     ) {
       edges {
         node {
