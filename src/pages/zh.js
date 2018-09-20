@@ -3,7 +3,7 @@ import Calendar from '../components/calendar'
 import { graphql } from 'gatsby'
 import Layout from '../components/layouts'
 const IndexPage = ({ data }) => (
-  <Layout pathname={window.location.pathname}>
+  <Layout pathname={typeof window !== 'undefined' && window.location.pathname}>
     <div>
       <h2>1994年</h2>
       <Calendar dates={data.allMarkdownRemark.edges} />

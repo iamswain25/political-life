@@ -2,7 +2,7 @@ import React from 'react'
 import cover from '../templates/cover.jpg'
 import Layout from '../components/layouts'
 const IndexPage = () => (
-  <Layout pathname={window.location.pathname}>
+  <Layout pathname={typeof window !== 'undefined' && window.location.pathname}>
     <div>
       <h2>王沪宁 Wang huning (October 6, 1955)</h2>
       <img src={cover} alt="face" />

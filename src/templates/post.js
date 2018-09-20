@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from '@reach/router'
+import Link from 'gatsby-link'
 import { graphql } from 'gatsby'
 import Layout from '../components/layouts'
 export default function Template({ data }) {
@@ -9,7 +9,7 @@ export default function Template({ data }) {
   const nextUrl = lang + (urlIndex + 1).toString().padStart(4, '0')
   const prevUrl = lang + (urlIndex - 1).toString().padStart(4, '0')
   return (
-    <Layout pathname={window.location.pathname}>
+    <Layout pathname={typeof window !== 'undefined' && window.location.pathname}>
       <div>
         <h2>{post.frontmatter.title}</h2>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
