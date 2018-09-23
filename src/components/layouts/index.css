@@ -625,3 +625,9 @@ pre tt:after {
 
 a {text-decoration-line: none; color: white;}
 .block a {display: block;}
+
+p > a {
+  text-decoration-style: dashed;
+  text-decoration-color: aquamarine;
+  text-decoration-line: underline;
+}
