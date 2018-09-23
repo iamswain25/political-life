@@ -1,27 +1,27 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import { graphql, navigate } from 'gatsby'
+import { graphql, navigate, withPrefix } from 'gatsby'
 import Layout from '../components/layouts'
 class postTemplate extends React.Component {
   UNSAFE_componentWillMount() {
     this.globalKeyUpEventId = this.keyUpHandler.bind(this);
     this.globalDoubleEventId = this.onDoubleClickHandler.bind(this);
-    document.addEventListener("keyup", this.globalKeyUpEventId);
-    document.addEventListener("touchstart", this.globalDoubleEventId);
+    typeof document !== 'undefined' && document.addEventListener("keyup", this.globalKeyUpEventId);
+    typeof document !== 'undefined' && document.addEventListener("touchstart", this.globalDoubleEventId);
   }
 
   componentWillUnmount() {
-    document.removeEventListener("keyup", this.globalKeyUpEventId);
-    document.removeEventListener("touchstart", this.globalDoubleEventId);
+    typeof document !== 'undefined' && document.removeEventListener("keyup", this.globalKeyUpEventId);
+    typeof document !== 'undefined' && document.removeEventListener("touchstart", this.globalDoubleEventId);
   }
 
   keyUpHandler(ev) {
     const { nextUrl, prevUrl, urlIndex } = this.btns()
     // console.log(ev.key);
     if (ev.key === 'ArrowLeft' && urlIndex > 0) {
-      navigate(prevUrl);
+      navigate(withPrefix(prevUrl));
     } else if (ev.key === 'ArrowRight' && urlIndex < 199) {
-      navigate(nextUrl);
+      navigate(withPrefix(nextUrl));
     }
   }
 
@@ -40,7 +40,7 @@ class postTemplate extends React.Component {
       // console.log(e)
       const { nextUrl, urlIndex } = this.btns()
       if (urlIndex < 199) {
-        navigate(nextUrl);
+        navigate(withPrefix(nextUrl));
       }
     }
     // e.preventDefault()
