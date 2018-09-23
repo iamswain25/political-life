@@ -6,7 +6,7 @@ import './calendar.css'
 class Calendar extends React.Component {
   render() {
     const dates = this.props.dates
-    let pointer = 1
+    let pointer = 0
     const monthHtml = []
     let datenow = new Date('1994-1-1')
     for (let i = 0; i < 12; i++) {
