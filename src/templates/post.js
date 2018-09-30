@@ -1,6 +1,5 @@
 import React from 'react'
-import Link from 'gatsby-link'
-import { graphql, navigate, withPrefix } from 'gatsby'
+import { graphql, navigate, Link } from 'gatsby'
 import Layout from '../components/layouts'
 class postTemplate extends React.Component {
   UNSAFE_componentWillMount() {
@@ -19,9 +18,9 @@ class postTemplate extends React.Component {
     const { nextUrl, prevUrl, urlIndex } = this.btns()
     // console.log(ev.key);
     if (ev.key === 'ArrowLeft' && urlIndex > 0) {
-      navigate(withPrefix(prevUrl));
+      navigate(prevUrl)
     } else if (ev.key === 'ArrowRight' && urlIndex < 199) {
-      navigate(withPrefix(nextUrl));
+      navigate(nextUrl)
     }
   }
 
@@ -40,7 +39,7 @@ class postTemplate extends React.Component {
       // console.log(e)
       const { nextUrl, urlIndex } = this.btns()
       if (urlIndex < 199) {
-        navigate(withPrefix(nextUrl));
+        navigate(nextUrl)
       }
     }
     // e.preventDefault()
