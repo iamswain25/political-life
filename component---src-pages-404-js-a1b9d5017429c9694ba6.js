@@ -1,2 +1,0 @@
-webpackJsonp([0x9427c64ab85d],{204:function(e,t,l){"use strict";function n(e){return e&&e.__esModule?e:{default:e}}t.__esModule=!0;var u=l(3),a=n(u),d=function(){return a.default.createElement("div",null,a.default.createElement("h1",null,"404 NOT FOUND"),a.default.createElement("p",null,"Maybe still editting or page does not exist."),a.default.createElement("p",null,"아직 편집 중이거나 페이지가 존재하지 않습니다."))};t.default=d,e.exports=t.default}});
-//# sourceMappingURL=component---src-pages-404-js-a1b9d5017429c9694ba6.js.map

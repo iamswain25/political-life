@@ -1,2 +1,0 @@
-webpackJsonp([27971836816642],{208:function(e,t,a){"use strict";function l(e){return e&&e.__esModule?e:{default:e}}t.__esModule=!0,t.pageQuery=void 0;var u=a(3),r=l(u),n=a(56),d=l(n),f=function(e){var t=e.data;return r.default.createElement("div",null,r.default.createElement("h2",null,"1994年"),r.default.createElement(d.default,{dates:t.allMarkdownRemark.edges}))};t.pageQuery="** extracted graphql fragment **";t.default=f}});
-//# sourceMappingURL=component---src-pages-ja-js-b4802b04623dabf73c9e.js.map

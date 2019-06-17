@@ -1,2 +1,0 @@
-webpackJsonp([0xf3676f91e5db],{205:function(e,a,t){"use strict";function l(e){return e&&e.__esModule?e:{default:e}}a.__esModule=!0,a.pageQuery=void 0;var n=t(3),r=l(n),u=t(56),d=l(u),f=function(e){var a=e.data;return r.default.createElement("div",null,r.default.createElement("h2",null,"Year 1994, Wang huning, Political life, original & translation"),r.default.createElement(d.default,{dates:a.allMarkdownRemark.edges}))};a.pageQuery="** extracted graphql fragment **";a.default=f}});
-//# sourceMappingURL=component---src-pages-en-js-bbe70a3d8e89c20621f9.js.map

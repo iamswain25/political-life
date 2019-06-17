@@ -1,2 +1,0 @@
-webpackJsonp([88762012501786],{1857:function(a,e){a.exports={data:{markdownRemark:{html:"<p>凌晨读哲夫的小说《天猎》，作者说是一部现代寓言小说，的确有一点，总的倾向似乎是现代派的，主体是人的欲望和人的生命的不能理解和非理性。写作方法是后现代色彩的，不是那么容易理解。</p>",id:"/home/swain/workspace/political-life/src/pages/zh/0105.md absPath of file >>> MarkdownRemark",fileAbsolutePath:"/home/swain/workspace/political-life/src/pages/zh/0105.md",frontmatter:{title:"6月3日 星期五"}}},pathContext:{id:"/home/swain/workspace/political-life/src/pages/zh/0105.md absPath of file >>> MarkdownRemark"}}}});
-//# sourceMappingURL=path---zh-0105-a3e53be9bd8dc9bf3002.js.map

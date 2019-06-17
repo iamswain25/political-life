@@ -1,2 +1,0 @@
-webpackJsonp([0xbee97ba4c33],{1426:function(a,e){a.exports={data:{markdownRemark:{html:"<p>朝に学校に戻ってバスに乗るのに2時間かかった。このスピードは本当に恐ろしい。最終的な戦略は、自発的に移動し、移動しないようにし、学習に集中することです。</p>",id:"/home/swain/workspace/political-life/src/pages/ja/0077.md absPath of file >>> MarkdownRemark",fileAbsolutePath:"/home/swain/workspace/political-life/src/pages/ja/0077.md",frontmatter:{title:"4月15日 金曜日"}}},pathContext:{id:"/home/swain/workspace/political-life/src/pages/ja/0077.md absPath of file >>> MarkdownRemark"}}}});
-//# sourceMappingURL=path---ja-0077-0b23bf058b11dfe43d3f.js.map
