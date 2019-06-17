@@ -1,22 +1,60 @@
 import React from "react";
 import Calendar from "../components/calendar";
+import SEO from "../components/seo";
 /*
 
-es = 1994 Wang Ning &lt;&lt; Vida política &gt;&gt; Traducción automática
-fr = 1994 Wang Huning &lt;&lt; vie politique &gt;&gt; Traduction automatique
+es = 1994 Wang Ning <<Vida política>> Traducción automática
+fr = 1994 Wang Huning <<vie politique>> Traduction automatique
 ja = 1994年
 ms = Tahun 1994, Wang huning, kehidupan politik, terjemahan automatik
 ru = Год 1994, Wang huning, Политическая жизнь
 vi = Năm 1994, Wang huning, Đời sống chính trị, dịch tự động
 zh = 1994年
-ko = 1994년 왕후닝 &lt;&lt;정치적 인생&gt;&gt; 번역 및 자동번역
-
+ko = 1994년 왕후닝 <<정치적 인생>> 번역 및 자동번역
+EN = Year 1994, Wang huning, Political life, auto-translation
 */
 
 export default props => {
+  const { lang } = props.match.params;
+  const [title, setTitle] = React.useState("");
+  React.useEffect(() => {
+    switch (lang) {
+      case "es":
+        setTitle("1994 Wang Huning <<Vida política>> Traducción automática");
+        break;
+      case "fr":
+        setTitle("1994 Wang Huning <<vie politique>> Traduction automatique");
+        break;
+      case "ja":
+        setTitle("1994年");
+        break;
+      case "ms":
+        setTitle(
+          "Tahun 1994, Wang huning, kehidupan politik, terjemahan automatik"
+        );
+        break;
+      case "ru":
+        setTitle("Год 1994, Wang huning, Политическая жизнь");
+        break;
+      case "vi":
+        setTitle("Năm 1994, Wang huning, Đời sống chính trị, dịch tự động");
+        break;
+      case "zh":
+        setTitle("1994年");
+        break;
+      case "ko":
+        setTitle("1994년 왕후닝 <<정치적 인생>> 번역 및 자동번역");
+        break;
+      case "EN":
+        setTitle("Year 1994, Wang huning, Political life, auto-translation");
+        break;
+      default:
+    }
+  }, [lang]);
   return (
     <div>
-      <h2>Year 1994, Wang huning, Political life, auto-translation</h2>
+      <SEO title="List" />
+      <h2>{title}</h2>
       <Calendar
         {...props}
         dates={[

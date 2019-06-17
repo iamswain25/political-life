@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import showdown from "showdown";
 // import { Link } from "react-router-dom";
 import ReactSwipe from "react-swipe";
+import SEO from "../../components/seo";
 showdown.setFlavor("github");
 export default props => {
   const { lang, page } = props.match.params;
@@ -43,6 +44,7 @@ export default props => {
 
   return (
     <section>
+      <SEO title={title} />
       <ReactSwipe
         swipeOptions={{
           continuous: false,
