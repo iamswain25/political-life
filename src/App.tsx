@@ -1,26 +1,38 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+import Header from "./components/header";
+import Index from "./pages";
+import List from "./pages/list";
+import Post from "./pages/templates/post";
 
+import "./index.css";
 const App: React.FC = () => {
+  const [textSize, setTextSize] = useState(23);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <Route
+        path="/"
+        component={(props: Object) => (
+          <Header {...props} setTextSize={setTextSize} textSize={textSize} />
+        )}
+      />
+      <div
+        style={{
+          margin: "0 auto",
+          maxWidth: 960,
+          padding: "0px 1.0875rem 1.45rem",
+          paddingTop: 0,
+          fontSize: textSize
+        }}
+      >
+        <Switch>
+          <Route path="/" exact component={Index} />
+          <Route path="/:lang" exact component={List} />
+          <Route path="/:lang/:page" exact component={Post} />
+        </Switch>
+      </div>
+    </BrowserRouter>
   );
-}
+};
 
 export default App;
