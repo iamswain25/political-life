@@ -13,10 +13,6 @@ http://att.newsmth.net/nForum/att/Book/62318/296
 
 http://www.chinareform.net/index.php?m=search&c=index&a=init&typeid=1&siteid=1&q=政治的人生
 
-## Framework
-
-Gatsby.js
-
 ### github page deploy command
 
 npm run deploy
@@ -52,3 +48,9 @@ Found the full text website on Feburary, copied one by one (until 0045.md). When
 ### 2018.9.18
 
 Added Russian, French, Spanish
+
+### 2019.6.17
+
+Refactoring code from Gatsby.js framework to React Hooks with Router.
+Pro: Access to github document directly without building the files.
+Con: No direct access with deep link. Only access on the root.
