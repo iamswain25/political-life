@@ -1,12 +1,7 @@
 .linkwhite {
   color: white;
   text-decoration: none;
-  margin: 5px;
-}
-
-.floatright {
-  float: right;
-  font-size: 20px;
+  padding-right: 5px;
 }
 
 .active {

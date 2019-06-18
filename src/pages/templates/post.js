@@ -14,8 +14,10 @@ export default props => {
   const [title, setTitle] = useState("");
   const transitionEnd = (index, elem) => {
     const pageNow = elem.dataset.page;
-    setContent("");
-    setTitle("Loading...");
+    if (page !== pageNow) {
+      setContent("");
+      setTitle("Loading...");
+    }
     props.history.push(pageNow);
   };
   useEffect(() => {

@@ -84,5 +84,5 @@ export default props => {
       </table>
     );
   }
-  return <div>{monthHtml}</div>;
+  return monthHtml;
 };

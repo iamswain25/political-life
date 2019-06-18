@@ -43,33 +43,48 @@ const Header = props => {
   return (
     <div
       style={{
-        background: "#BA0020",
+        background: "#BA0020"
+        // padding: "1.45rem 1.0875rem"
         // marginBottom: "1.45rem"
       }}
     >
       <div
         style={{
-          margin: "0 auto",
-          maxWidth: 960,
-          padding: "1.45rem 1.0875rem",
           display: "flex",
           flexDirection: "row",
-          justifyContent: "space-between"
+          flexWrap: "wrap",
+          maxWidth: 960,
+          margin: "0 auto"
         }}
       >
-        <div>
-          <h1 style={{ margin: 0, display: "inline-block" }}>
-            <Link
-              to={upUrl}
-              style={{
-                color: "white",
-                textDecoration: "none"
-              }}
-            >
-              {TITLE}
-            </Link>
-          </h1>
-          <div>
+        <div
+          style={{
+            flexGrow: 1,
+            flexBasis: 320,
+            overflow: "hidden",
+            marginLeft: "1rem",
+            marginRight: "1rem",
+            paddingTop: "1.45rem",
+            paddingBottom: "1.45rem"
+          }}
+        >
+          <Link
+            to={upUrl}
+            style={{
+              color: "white",
+              textDecoration: "none"
+            }}
+          >
+            <h1 style={{ margin: 0, display: "inline-block" }}>{TITLE}</h1>
+          </Link>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              flexWrap: "wrap",
+              alignItems: "center"
+            }}
+          >
             {langList.map(([lang, title], i) => {
               const url = `/${lang}${file}`;
               return (
@@ -85,7 +100,16 @@ const Header = props => {
             })}
           </div>
         </div>
-        <div className="floatright">
+        <div
+          style={{
+            flexGrow: 0,
+            minWidth: 150,
+            marginLeft: "1rem",
+            marginRight: "1rem",
+            marginTop: "1rem",
+            marginBottom: "1rem"
+          }}
+        >
           <div
             style={{
               display: "flex",
