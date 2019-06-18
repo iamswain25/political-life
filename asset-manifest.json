@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/political-life/static/css/main.a38cad6e.chunk.css",
-    "main.js": "/political-life/static/js/main.0c0837c1.chunk.js",
-    "main.js.map": "/political-life/static/js/main.0c0837c1.chunk.js.map",
+    "main.css": "/political-life/static/css/main.48141e36.chunk.css",
+    "main.js": "/political-life/static/js/main.4c5af46c.chunk.js",
+    "main.js.map": "/political-life/static/js/main.4c5af46c.chunk.js.map",
     "runtime~main.js": "/political-life/static/js/runtime~main.7725e1eb.js",
     "runtime~main.js.map": "/political-life/static/js/runtime~main.7725e1eb.js.map",
     "static/js/2.c9186fe1.chunk.js": "/political-life/static/js/2.c9186fe1.chunk.js",
     "static/js/2.c9186fe1.chunk.js.map": "/political-life/static/js/2.c9186fe1.chunk.js.map",
     "index.html": "/political-life/index.html",
-    "precache-manifest.7115acfc2d30aa30f9cf9b7cce6f40a3.js": "/political-life/precache-manifest.7115acfc2d30aa30f9cf9b7cce6f40a3.js",
+    "precache-manifest.948b9c9c51610cdfb4b7eb6d455e639e.js": "/political-life/precache-manifest.948b9c9c51610cdfb4b7eb6d455e639e.js",
     "service-worker.js": "/political-life/service-worker.js",
-    "static/css/main.a38cad6e.chunk.css.map": "/political-life/static/css/main.a38cad6e.chunk.css.map",
+    "static/css/main.48141e36.chunk.css.map": "/political-life/static/css/main.48141e36.chunk.css.map",
     "static/media/cover.jpg": "/political-life/static/media/cover.4e8b541f.jpg"
   }
 }
