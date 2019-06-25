@@ -1,6 +1,5 @@
 import React from "react";
 import Helmet from "react-helmet";
-import cover from "../pages/templates/cover.jpg";
 const TITLE = "王沪宁《政治的人生》";
 const DESCRIPTION = `1994 diary of a Communist ideologue`;
 
@@ -49,7 +48,8 @@ function SEO({ description = ``, lang = `en`, meta = [], title }) {
         },
         {
           property: "og:image",
-          content: "https://iamswain25.github.io" + cover
+          content:
+            "https://github.com/iamswain25/political-life/raw/master/src/pages/templates/cover.jpg"
         }
       ].concat(meta)}
     />

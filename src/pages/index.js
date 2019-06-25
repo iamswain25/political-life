@@ -3,7 +3,7 @@ import cover from "./templates/cover.jpg";
 import SEO from "../components/seo";
 const IndexPage = () => (
   <div>
-    <SEO title="Intro" />
+    <SEO title="Political Life" />
     <h2>王沪宁 Wang huning (October 6, 1955)</h2>
     <img src={cover} alt="face" style={{ maxWidth: "100%" }} />
     <p>
