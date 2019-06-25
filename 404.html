@@ -1,8 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Single Page Apps for GitHub Pages</title>
+    <meta
+      property="og:url"
+      content="https://iamswain25.github.io/political-life/"
+    />
+    <meta property="og:title" content="王沪宁《政治的人生》" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://github.com/iamswain25/political-life/raw/master/src/pages/templates/cover.jpg"
+    />
+    <meta
+      property="og:description"
+      content="1994 diary of a Communist ideologue"
+    />
     <script type="text/javascript">
       // Single Page Apps for GitHub Pages
       // https://github.com/rafrex/spa-github-pages
@@ -25,14 +39,25 @@
       var segmentCount = 1;
       var l = window.location;
       l.replace(
-        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
-        l.pathname.split('/').slice(0, 1 + segmentCount).join('/') + '/?p=/' +
-        l.pathname.slice(1).split('/').slice(segmentCount).join('/').replace(/&/g, '~and~') +
-        (l.search ? '&q=' + l.search.slice(1).replace(/&/g, '~and~') : '') +
-        l.hash
+        l.protocol +
+          "//" +
+          l.hostname +
+          (l.port ? ":" + l.port : "") +
+          l.pathname
+            .split("/")
+            .slice(0, 1 + segmentCount)
+            .join("/") +
+          "/?p=/" +
+          l.pathname
+            .slice(1)
+            .split("/")
+            .slice(segmentCount)
+            .join("/")
+            .replace(/&/g, "~and~") +
+          (l.search ? "&q=" + l.search.slice(1).replace(/&/g, "~and~") : "") +
+          l.hash
       );
     </script>
   </head>
-  <body>
-  </body>
+  <body></body>
 </html>
