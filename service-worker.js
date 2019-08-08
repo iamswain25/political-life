@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/political-life/precache-manifest.1cc35615bba614f810ee84f06c55c6c0.js"
+  "/political-life/precache-manifest.73e48ebde5fdb403fa8b85ba11bba019.js"
 );
 
 self.addEventListener('message', (event) => {
