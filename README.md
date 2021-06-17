@@ -7,7 +7,7 @@ Texts & Translation of Wanghuning's '94 journals.
 
 ### PDF
 
-http://att.newsmth.net/nForum/att/Book/62318/296
+https://github.com/iamswain25/political-life/raw/master/rawtexts/political-life.pdf
 
 ### Website
 
