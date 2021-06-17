@@ -15,7 +15,7 @@
     "react-router-dom": "^5.0.1",
     "react-scripts": "3.0.1",
     "react-swipe": "^6.0.4",
-    "showdown": "^1.9.0",
+    "showdown": "^1.9.1",
     "swipe-js-iso": "^2.1.5",
     "typescript": "3.5.2"
   },
